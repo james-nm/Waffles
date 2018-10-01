@@ -23,3 +23,8 @@ Usage:
 
 Compatibility:
 - Tested with Blender 2.79
+
+Referenced pages/scripts/packages:
+http://pasteall.org/63524/python
+https://stackoverflow.com/questions/39650287/exporting-multiple-fbx-files-from-blender
+Unity Tools (Patrick Jezek)
