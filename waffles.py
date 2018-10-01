@@ -1,3 +1,10 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Oct  1 12:28:51 2018
+
+@author: Waffletron
+"""
+
 import bpy
 import os
 
@@ -11,11 +18,6 @@ from bpy.types import (
         Operator,
         Panel,
 )
-
-# References:
-# http://pasteall.org/63524/python
-# https://stackoverflow.com/questions/39650287/exporting-multiple-fbx-files-from-blender
-# Unity Tools (Patrick Jezek)
 
 
 bl_info = {
@@ -160,6 +162,8 @@ class WafflesExport(Operator):
     bl_idname = 'waffles.export'
     bl_label = 'Execute export operation'
 
+    GROUP_APPEND_FILENAME = "-group-"
+
     def export_selected_meshes(self, name):
         '''
         export_selected_meshes(self, name)
@@ -230,7 +234,10 @@ class WafflesExport(Operator):
                     seen_objects.append(obj)
                     obj.select = True
 
-                self.export_selected_meshes(gr.name)
+                self.export_selected_meshes(
+                        gr.name
+                        + self.GROUP_APPEND_FILENAME
+                        )
 
             for seen_obj in seen_objects:
                 if seen_obj in objects:
