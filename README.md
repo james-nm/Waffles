@@ -1,4 +1,8 @@
 # Waffles
+
+Note:
+Development stopped due to the 2.8 release of Blender. No longer needed.
+
 Purpose:
 Adds useful export tools. Enables batch exports with various structures:
   - Grouped Meshes
