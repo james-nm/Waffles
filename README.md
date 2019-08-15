@@ -1,10 +1,12 @@
 # Waffles
 
+Batch export add-on for Blender 2.79
+
 Note:
 Development stopped due to the 2.8 release of Blender. No longer needed.
 
 Purpose:
-Adds useful export tools. Enables batch exports with various structures:
+Adds useful export tools to Blender. Enables batch exports with various structures:
   - Grouped Meshes
   - Parent/Child Meshes
   - Individual Meshes
